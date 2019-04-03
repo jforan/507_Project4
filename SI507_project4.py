@@ -16,14 +16,14 @@ for p in SCRAPING_SI507_project4.topics_pages:
         park_data = []
         ## name
         if n.find('h3') is None:
-            new = e.replace_with('Not Applicable')
+            new = n.replace_with('Not Applicable')
             park_data.append(new)
         else:
             park_data.append(n.find('h3').string)
 
         ## location
         if n.find('h4') is None:
-            new = e.replace_with('Not Applicable')
+            new = n.replace_with('Not Applicable')
             park_data.append(new)
         else:
             new = n.find('h4')
@@ -31,7 +31,7 @@ for p in SCRAPING_SI507_project4.topics_pages:
 
         ##type
         if n.find('h2') is None:
-            new = e.replace_with('Not Applicable')
+            new = 'Not Applicable'
             park_data.append(new)
         else:
             new = n.find('h2')
@@ -39,7 +39,7 @@ for p in SCRAPING_SI507_project4.topics_pages:
 
         ##description
         if n.find('p') is None:
-            new = e.replace_with('Not Applicable')
+            new = n.replace_with('Not Applicable')
             park_data.append(new)
         else:
             # string = n.get_text('p')
