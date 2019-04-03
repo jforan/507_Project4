@@ -13,6 +13,7 @@ This programs scraps data from https://www.nps.gov/index.htm, parsing through ea
 * CSV
 * requests, json
 * bs4
+* advanced_expiry_caching
 
 note: all library and package requirements can be found acquired by running the requirements.txt file.
 
@@ -21,3 +22,9 @@ note: all library and package requirements can be found acquired by running the 
 
 type 'python SI507_project4.py' into the command terminal
 
+
+# Misc. Items
+
+* SCRAPING_SI507_project4.py scrapes the data and is NECESSARY in order to compelte this exercise
+* advanced_expiry_caching.py required to cache the data properly
+* SAMPLE_nps_export.csv is an example of what the CSV output will look like
